@@ -1,0 +1,30 @@
+{
+  "name": "mitch.cx",
+  "version": "2.0.0",
+  "description": "Personal website: mitch.cx",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "jstransformer-markdown-it": "^2.1.0"
+  },
+  "scripts": {
+    "test": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mitchell-Nuckols/mitch.cx.git"
+  },
+  "author": "Mitchell Nuckols",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mitchell-Nuckols/mitch.cx/issues"
+  },
+  "homepage": "https://github.com/Mitchell-Nuckols/mitch.cx#readme",
+  "devDependencies": {
+    "gulp-watch": "^5.0.1"
+  }
+}

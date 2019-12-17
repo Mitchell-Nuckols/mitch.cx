@@ -1,0 +1,7 @@
+extends templates/base
+
+block head
+    - var page = 'About';
+
+block body
+    include:markdown-it(html="true") ../assets/about.md
