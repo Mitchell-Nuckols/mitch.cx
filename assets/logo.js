@@ -1,7 +1,7 @@
-var paths = document.querySelectorAll('#logo svg path');
-
 function loadComplete() {
-    if(document.referrer.origin != 'https://mitch.cx') {
+    if(!document.referrer.includes(location.origin)) {
+        var paths = document.querySelectorAll('#logo svg path');
+
         anime({
             targets: paths,
             loop: false,
