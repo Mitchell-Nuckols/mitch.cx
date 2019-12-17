@@ -1,0 +1,7 @@
+extends templates/base
+
+block head
+    - var page = 'Projects';
+
+block body
+    include:markdown-it(html="true") ../copies/projects.md

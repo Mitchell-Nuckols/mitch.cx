@@ -4,11 +4,14 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="stylesheet", href="styles/main.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js", integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY=", crossorigin="anonymous")
         block head
         title #{page} - mitch.cx
-    body
-        p#banner
-            include ../../assets/banner.txt
+    body(onload="loadComplete()")
+        figure#logo
+            include ../../assets/logo.svg
         include navbar.pug
         .content
             block body
+        script(type="text/javascript")
+            include ../../assets/logo.js

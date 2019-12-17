@@ -20,10 +20,14 @@ body {
     background-color: var(--bg);
 }
 
-p#banner {
-    font-size: 1.25em;
-    text-align: center;
-    white-space: pre;
+#logo {
+    width: 70%;
+    margin: auto;
+    padding: 1em;
+}
+
+ul {
+    list-style-type: symbols(cyclic "-");
 }
 
 #navbar {

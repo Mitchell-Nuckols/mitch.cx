@@ -10,8 +10,8 @@ const paths = {
         src: 'views/*.pug',
         dest: 'build/'
     },
-    viewStyles: {
-        src: 'styles/**/*.css',
+    styles: {
+        src: 'styles/*.css',
         dest: 'build/styles/'
     },
     assets: {
@@ -20,12 +20,12 @@ const paths = {
     }
 }
 
-function viewStyles() {
-    return gulp.src(paths.viewStyles.src)
+function styles() {
+    return gulp.src(paths.styles.src)
     .pipe(css({
         compatibility: 'ie8'
     }))
-    .pipe(gulp.dest(paths.viewStyles.dest))
+    .pipe(gulp.dest(paths.styles.dest))
 }
 
 function views() {
@@ -43,14 +43,14 @@ function assets() {
 }
 
 function clean() {
-    return del(['build/*.html', 'build/styles/*.css', 'build/assets/*.md'])
+    return del(['build/*.html', 'build/styles/*.css', 'build/assets/*'])
 }
 
 function watchBuild() {
-    return watch(['styles/*.css', 'views/**/*.pug', 'assets/'], build)
+    return watch(['styles/*.css', 'views/**/*.pug', 'copies/*'], build)
 }
 
-const build = gulp.series(clean, assets, viewStyles, views)
+const build = gulp.series(clean, assets, styles, views)
 
 exports.default = watchBuild
 exports.build = build
