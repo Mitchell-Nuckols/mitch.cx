@@ -1,6 +1,6 @@
 ## About
 
-<img src="assets/portrait.jpg" width="200" align="right">
+<img id="portrait" src="assets/portrait.jpg" width="200" align="right">
 
 What's up, I'm Mitchell Nuckols. I am a first year Electrical Engineering major, General Bio minor at the University of California, San Diego.
 Currently, my primary interest is in exploring neurotechnologies, focusing on neural interfaces. Apart from my university coursework, I enjoy learning about neuroscience and I hope to enter a neuroengineering graduate program after completing my bachelor's.

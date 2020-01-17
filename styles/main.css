@@ -20,10 +20,23 @@ body {
     background-color: var(--bg);
 }
 
+#resumemobile {
+    visibility: hidden;
+}
+
+#resumepdf {
+    visibility: visible;
+}
+
 #logo {
     width: 70%;
     margin: auto;
     padding: 1em;
+}
+
+#portrait {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 ul {
@@ -85,6 +98,14 @@ p.included {
 
     #navbar {
         width: 100%;
+    }
+
+    #resumemobile {
+        visibility: visible;
+    }
+    
+    #resumepdf {
+        visibility: hidden;
     }
 
     .content {

@@ -8,8 +8,8 @@ function loadComplete() {
             direction: 'normal',
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: 'linear',
-            duration: 500,
-            delay: (el, i) => { return i * 500 }
+            duration: 250,
+            delay: (el, i) => { return i * 250 }
         });
     }
 }
