@@ -15,7 +15,7 @@ const paths = {
         dest: 'build/styles/'
     },
     assets: {
-        src: 'assets/*.{png,jpg}',
+	src: 'assets/**/*.{png,jpg}',
         dest: 'build/assets/'
     }
 }
@@ -47,7 +47,7 @@ function clean() {
 }
 
 function watchBuild() {
-    return watch([views.src, styles.src, 'copies/*'], build)
+    return watch([paths.templates.src, paths.styles.src, paths.assets.src, 'copies/*'], build)
 }
 
 const build = gulp.series(clean, assets, styles, views)
